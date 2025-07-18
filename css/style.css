@@ -188,7 +188,7 @@ body {
     
  }
  .second-p1{
-    width:100px;
+    width:150px;
     height: 3px;
     margin-top: 20px;
     background-color: blue;
@@ -271,7 +271,7 @@ body {
 .third-title{
     font-size: 60px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 10px 0px;
     text-transform: capitalize;
 }
  .third-p1{
@@ -361,11 +361,11 @@ body {
 .forth-title{
     font-size: 60px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 10px 0px;
     text-transform: capitalize;
 }
  .forth-p1{
-    width:100px;
+    width:150px;
     height: 3px;
     background-color: blue;
     margin: auto;
@@ -461,7 +461,7 @@ body {
  .fifth-title{
     font-size: 50px;
     text-transform: capitalize;
-    margin-bottom: 12px;
+    padding: 10px 0px;
     color: #3c2a4d;
  }
  .fifth-p1{
@@ -487,25 +487,30 @@ body {
  }
  .fifth-info-list li{
     list-style-type: none;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 50px;
     display: inline;
     text-transform: capitalize;
     color: #2a2a2a;
- 
+ }
+ .fifth-info-list li:hover{
+    cursor: pointer;
+    font-size: 18px;
  }
  .fifth-image{
     width:35%;
     float:right;
+    margin-top: 100px;
  }
  .fifth-img{
     transition: 0.5s;
     width:95%;
-    height:500px
+    height:400px;
+    border-radius: 5px;
  }
   .fifth-img:hover{
     width:100%;
-    height:500px
+    height:450px
  }
  .fifth-image-list{
     margin-left: 36%;
@@ -588,7 +593,7 @@ body {
     
   }
   .seventh-p{
-    width:100px;
+    width:150px;
     padding: 2px;
     background-color: #6b00b3;
     margin: auto;
@@ -772,7 +777,7 @@ body {
     color: #3c2a4d;
   }
 .ninth-p{
-    width:100px;
+    width:80px;
     padding: 2px;
     background-color: #6600ff;
     margin: auto;
@@ -834,6 +839,13 @@ body {
     top: 0;
     right: 0;
     background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.ninth-item:hover .ninth-icons{
+    visibility: visible;
+    opacity: 1;
 }
 .ninth-icons i{
     color: #6600ff;
@@ -841,6 +853,7 @@ body {
     font-size: 20px;
     line-height: 40px;
 }
+
 .ninth-item-title{
     font-size: 25px;
     text-transform: capitalize;
@@ -924,6 +937,15 @@ body {
     height: 300px;
     border-radius: 10px;
     margin-bottom: 15px;
+  }
+  .tenth-hidden{
+    display: none;
+    opacity:0;
+    transition: 0.5s;
+  }
+ .tenth-item:hover .tenth-hidden{
+    display: block;
+    opacity:1;
   }
 .tenth-content{
     margin-top: 10px;
