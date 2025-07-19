@@ -433,6 +433,8 @@ body {
     float: left;
     width:20%;
     height: 100%;
+}
+.forth-i a{
     font-size: 30px;
     color: rgb(110, 43, 226);
 }
